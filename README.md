@@ -17,5 +17,4 @@ Features:
 - View Orders
 - Session Management
 
-Developed as part of MCA project.
 
