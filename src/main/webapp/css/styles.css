@@ -1,0 +1,289 @@
+/* Reset and basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background: #f5fff7;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    background: #2d6a4f;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #95d5b2;
+  }
+  
+  /* Hero section */
+  .hero {
+    padding: 60px 20px;
+    text-align: center;
+    background: url('images/bg.jpg') center/cover no-repeat;
+    color: white;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+  }
+  
+  .hero p {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+  }
+  
+  .btn {
+    background: #40916c;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background: #52b788;
+  }
+  
+  /* Sections */
+  .section {
+    
+    padding: 40px 20px;
+  }
+  
+  .section.active {
+    display: block;
+  }
+  
+  /* Shop section */
+  #searchInput {
+    width: 60%;
+    padding: 10px;
+    margin: 20px auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+  }
+  
+  .product-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .product-card h3 {
+    margin: 10px 0 5px;
+  }
+  
+  .product-card p {
+    color: #2d6a4f;
+    font-weight: bold;
+  }
+  
+  /* Contact section */
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  form input, form textarea {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  form button {
+    background: #2d6a4f;
+    color: white;
+    padding: 12px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  form button:hover {
+    background: #40916c;
+  }
+  
+  /* home sction */
+  .about-home, .why-home, .categories-home {
+    margin: 30px auto;
+    max-width: 800px; 
+    text-align: center;
+  }
+  
+  .why-home ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .why-home li {
+    margin: 8px 0;
+    font-size: 16px;
+  }
+  
+  .category-row {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .category-item {
+    padding: 12px 18px;
+    background-color: #e3f4e3;
+    border-radius: 10px;
+    margin: 8px;
+    font-weight: bold;
+    transition: transform 0.2s;
+  }
+  
+  .category-item:hover {
+    transform: scale(1.05);
+  }
+  .welcome-popup {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    background-color: #d1f7d6;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #00000033;
+    font-weight: bold;
+    z-index: 1000;
+    animation: fadeOut 3s ease-in-out forwards;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  @keyframes fadeOut {
+    0% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; display: none; }
+  }
+  .about-nursery {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #f0fdf4;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 128, 0, 0.1);
+    text-align: center;
+  }
+  
+  .about-nursery h2 {
+    color: #2e7d32;
+    margin-bottom: 15px;
+  }
+  
+  .about-nursery p {
+    margin: 10px 0;
+    color: #444;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #f0fff0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .carousel-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  }
+  
+  .carousel-slide {
+    display: flex;
+    width: 300%;
+    animation: slide 12s infinite ease-in-out;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 1s ease-in-out;
+  }
+  
+  /* Animation */
+  @keyframes slide {
+    0% { transform: translateX(0%); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0%); }
+  }
+  .shopContainer{
+    height: 100vh;
+  }
